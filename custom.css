@@ -1,0 +1,144 @@
+ /* font-family: 'Archivo Black', sans-serif;
+    font-family: 'Cardo', serif;
+    font-family: 'Tenor Sans', sans-serif; */
+
+body {
+    /* here we use our main typeface */
+    font-family: 'Cardo', georgia, serif;
+    font-size:18px;
+    line-height:1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* here we use cardo class we can just apply the cardo font setting */
+.cardo {
+    font-family: 'Cardo', georgia, serif;
+}
+
+.archivo, 
+.text-block h3,
+.text-block blockquote h4 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight:normal;
+}
+
+.text-block blockquote h4 {
+    text-transform:uppercase;
+    font-size:14px;
+    letter-spacing:0.05em;
+    margin:0;
+}
+
+.text-block blockquote p {
+    font-size:36px;
+    line-height:1.33;
+}
+
+.archivo-regular {
+    font-family: 'Archivo', sans-serif;
+}
+
+.tenor, 
+.text-block blockquote p {
+    font-family: 'Tenor Sans', sans-serif; 
+}
+
+.hero-heading {
+    /* 1em is a relative spacing for the character */
+    letter-spacing: 0.05em;
+}
+
+.hero-content {
+    max-width:750px;
+}
+
+.text-block h3 {
+    font-size:20px;
+    margin-top:0;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.header-nav {
+    top:0;
+    left:0;
+}
+
+
+/* little line underneath the date */
+
+.line {
+    margin-left:auto;
+    margin-right:auto;
+    height:1px;
+    background-color:#1c1c1c;
+    width:40px;
+    display:block;
+}
+
+/* here we override the inline size style on our image
+so it scales nicely with the page */
+.gallery-image img {
+    height:auto !important;
+    width:auto !important;
+    display:block;
+}
+
+.caption {
+    max-width:870px;
+}
+
+.container {
+    max-width:1300px;
+}
+
+.explore-title {
+    margin-bottom:48px;
+    max-width:320px;
+}
+
+.description {
+    max-width:864px;
+}
+
+.footer-content {
+    background-color:#1c1c1c;
+}
+
+.gallery .gallery-image:last-of-type {
+    margin-bottom:0;
+}
+
+.gallery {
+    display:grid; 
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.full-width {
+    grid-column: span 12; 
+}
+
+.half-width {
+    grid-column: span 6; 
+}
+
+.third-width {
+    grid-column: span 4; 
+}
+
+.two-third-width {
+    grid-column: span 8; 
+}
+
+blockquote {
+    margin:0;
+}
+
+blockquote p {
+    margin-top:0;
+    margin-bottom:32px;
+}
